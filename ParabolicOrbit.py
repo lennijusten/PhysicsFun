@@ -92,4 +92,4 @@ anim = FuncAnimation(fig, update, interval=20, blit=True, repeat=True,frames=np.
 
 plt.show()
 
-anim.save('/Users/lenni/Downloads/parabolic_orbit.gif')
+anim.save('parabolic_orbit.gif')
