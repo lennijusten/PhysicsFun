@@ -79,11 +79,9 @@ ax.axis([-3,3,-3,3])
 ax.add_patch(sun)
 label = ax.annotate("Sun", xy=(0, 0.2), fontsize=14, ha="center")
 
-def position(i): # return x,y position from the index in n_frames
-    return np.array([x_au[i],y_au[i]])
 
 def update(i): # update x,y position of point
-    x,y = position(i)
+    x,y = np.array([x_au[i],y_au[i]])
     point.set_data([x], [y])
     return point,
 
